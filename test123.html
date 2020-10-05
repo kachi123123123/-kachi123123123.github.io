@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
     <title>AR Library</title>
+<script src="./js/webcomponents-loader.js"></script>
+<script src="./js/intersection-observer.js"></script>
+<script src="./js/ResizeObserver.js"></script>
+
+<script src="./js/fullscreen.polyfill.js"></script>-->
+
+<script src="./js/prismatic.js"></script>
+
+<script type="module" src="./js/model-viewer.js"></script>
+<script nomodule src="./js/model-viewer-legacy.js"></script>  
 </head>
 <body>
+	
     <h1>Welcome to the AR Library</h1>
     <p>Welcome to the AR Library website. I created this website in order to view AR objects from the web on any device running iOS 12. Conincidentally, this is the first time I made a website with HTML! It's a lot of fun!</p>
 	<a href="trowel.usdz" rel="ar">
@@ -20,5 +32,13 @@
     <img src="Buster_Drone.png" width=200>
 </a>
 
+<model-viewer
+    src="./Buster_Drone.gltf"
+    alt="A 3D model of a 2 cylinder"
+    auto-rotate
+    camera-controls></model-viewer>	
+	
+	
+	
 </body>
 </html>
