@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+    <title>AR Library</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+   
+	<a href="trowel.usdz" rel="ar">
+    <img src="trowel.png" width=200>
+</a>
+<a href="Buster_Drone.usdz" rel="ar">
+    <img src="Buster_Drone.png" width=200>
+</a>
+
+<a href="ZOMBIE_Dívka.glb" rel="ar">
+    <img src="zombie_divka.png" width=200>
+</a>
+	
+
+
+
+    <!-- Loads model-viewer for modern browsers -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <!-- Loads model-viewer for older browsers -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+	
+
+<model-viewer
+    src="./ZOMBIE_Dívka.glb"
+    ios-src="./ZOMBIE_Dívka.usdz"
+    poster="./zombie_divka.png"
+    camera-orbit="1.2195rad 1.362rad auto"
+    shadow-intensity="1"
+    ar
+    ar-modes="webxr scene-viewer quick-look fallback"
+    camera-controls
+    alt="3D model of a chair with footrest"
+>
+
+	
+</body>
+</html>
