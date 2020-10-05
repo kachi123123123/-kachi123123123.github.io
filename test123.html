@@ -3,6 +3,7 @@
 	
 <head>
     <title>AR Library</title>
+	<link rel="stylesheet" href="test.css">
 </head>
 <body>
     <h1>Welcome to the AR Library</h1>
@@ -14,29 +15,28 @@
 <a href="Buster_Drone.usdz" rel="ar">
     <img src="Buster_Drone.png" width=200>
 </a>
-<a href="Buster_Drone.usdz" rel="ar">
-    <img src="Buster_Drone.png" width=200>
-</a>
 
 <a href="Buster_Drone.gltf" rel="ar">
     <img src="Buster_Drone.png" width=200>
 </a>
 	
-<script src="./js/webcomponents-loader.js"></script>
-<script src="./js/intersection-observer.js"></script>
-<script src="./js/ResizeObserver.js"></script>
-<script src="./js/fullscreen.polyfill.js"></script>
-<script src="./js/prismatic.js"></script>
-<script type="module" src="./js/model-viewer.js"></script>
-<script nomodule src="./js/model-viewer-legacy.js"></script>  
-	
+    <div id="holder">
+        <div id="text">
+            <h1 class="sample-text">1234</h1>
+           
+        </div>
+        <div id="model">
+            <model-viewer src="Buster_Drone.gltf" alt="A 3D model of a robot" auto-rotate="" camera-controls="" background-color="#455A64"></model-viewer>
+        </div>
+    </div>
+
+    <!-- Loads model-viewer for modern browsers -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <!-- Loads model-viewer for older browsers -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 	
 
-<model-viewer
-    src="./Buster_Drone.gltf"
-    alt="A 3D model of a 2 cylinder"
-    auto-rotate
-    camera-controls></model-viewer>	
 	
 	
 	
